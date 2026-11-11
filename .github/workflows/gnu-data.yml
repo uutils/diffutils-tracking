@@ -22,7 +22,7 @@ jobs:
       uses: actions/checkout@v7
 
     - name: Download the GNU result
-      uses: dawidd6/action-download-artifact@v27
+      uses: dawidd6/action-download-artifact@v28
       with:
         workflow: GnuTests.yml
         name: test-summary
@@ -32,7 +32,7 @@ jobs:
 
 
     - name: Download the full test report
-      uses: dawidd6/action-download-artifact@v27
+      uses: dawidd6/action-download-artifact@v28
       with:
         workflow: GnuTests.yml
         name: diffutils-gnu-full-result
